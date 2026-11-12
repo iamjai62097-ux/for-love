@@ -1,12 +1,23 @@
-# 💖 Romantic Birthday Surprise Website
+# 💖 Romantic Birthday Surprise Website (Pure Static)
 
 A luxury, romantic, fully responsive birthday surprise website for your girlfriend built with **100% Pure HTML5, CSS3, and Vanilla JavaScript**.
 
 - ❌ No React, Vue, Angular, or frameworks
 - ❌ No npm or build step required to run
-- ❌ No backend required
+- ❌ No backend or Node.js required
 - ✅ Works directly in any browser by double-clicking `index.html`
-- ✅ Host free on **GitHub Pages**, **Netlify**, or **Vercel** in 2 minutes!
+- ✅ Host free on **GitHub Pages**, **Netlify**, or **Vercel** in seconds!
+
+---
+
+## 📁 Pure Static Files
+
+The website requires only three core files:
+```text
+├── index.html       # Clean semantic HTML5 layout & structure
+├── style.css        # Luxury romantic styling, glassmorphism & CSS animations
+└── script.js        # Particles, audio synth, cake & envelope interactions, photo gallery
+```
 
 ---
 
@@ -32,8 +43,8 @@ A luxury, romantic, fully responsive birthday surprise website for your girlfrie
 
 4. **Memories Gallery**:
    - Elegant polaroid frames with golden pins, dates, captions, and interactive like hearts.
-   - Pre-loaded with 6 romantic aesthetic vector illustrations out-of-the-box.
-   - **Upload Your Own Photos**: Click "Add Your Own Photo" to select images directly from your phone or computer. Photos persist in `localStorage`!
+   - Pre-loaded with romantic aesthetic vector illustrations out-of-the-box.
+   - **Upload Your Own Photos**: Click "Add Your Own Photo" to select images directly from your phone or computer.
    - Fullscreen Lightbox modal to view any photo in high resolution.
 
 5. **Special Surprise & Love Coupons**:
@@ -44,50 +55,31 @@ A luxury, romantic, fully responsive birthday surprise website for your girlfrie
 6. **Romantic Music Player**:
    - Top floating romantic music bar with visualizer equalizer bars.
    - **Zero-failure Web Audio API Synthesizer**: Generates a warm, emotional piano/music box melody in real-time right inside the browser. No external MP3 hosting needed, zero broken links, works completely offline!
-   - Option to link any custom MP3 URL in the customizer settings.
    - Starts gracefully upon user interaction to respect modern browser autoplay policies.
 
 7. **Final Screen**:
    - Giant glowing beating heart with pulsating particle aura.
    - "I Love You Forever ❤️" memorable closing proclamation.
-   - "Replay Celebration", "Share Surprise Link", and "Customize" buttons.
-
-8. **In-App Customizer & 1-Click Shareable Link**:
-   - Click the ⚙️ gear icon in the top navigation or final screen.
-   - Edit:
-     - Girlfriend's Name (e.g., "Sarah", "Emma", "My Queen")
-     - Your Name / Sign-off
-     - Birthday Headline
-     - Love Letter Message
-     - Special Secret Quote
-     - Custom Music MP3 URL
-   - Click **"Copy Share Link 🔗"** to get a single URL with your message encoded that you can send directly to her on WhatsApp, iMessage, Instagram, or Telegram!
 
 ---
 
-## 🛠️ How to Customize
+## 🛠️ How to Customize Names & Love Letter
 
-### Option A: Use the In-App Customizer (Easiest)
-1. Open `index.html` in your browser.
-2. Click the **⚙️** icon in the top right.
-3. Fill in her name and your love letter.
-4. Click **"Copy Share Link 🔗"** or **"Save & Apply ❤️"**.
-
-### Option B: Edit `script.js` Directly
-Open `script.js` in any text editor and edit the `DEFAULT_CONFIG` object near lines 20–35:
+Open `script.js` in any text editor (like Notepad, TextEdit, or VS Code) and update the `DEFAULT_CONFIG` at the top of the file:
 ```javascript
 const DEFAULT_CONFIG = {
-  recipientName: "My Princess", // Her name or nickname
+  recipientName: "My Princess", // Her name or nickname (e.g. "Sarah", "Emily")
   senderName: "Yours Forever",  // Your name
   greetingTitle: "Hey Beautiful ❤️",
   birthdayHeadline: "Happy Birthday, My Princess! 🎂",
   letterGreeting: "My Dearest Love,",
   letterBody: "Your personalized letter text here...",
   letterSignoff: "Forever & Always With All My Love,",
-  specialSurpriseMessage: "My heart is, and will always be, entirely yours.",
-  customMusicUrl: "" // Optional MP3 link
+  specialSurpriseMessage: "My heart is, and will always be, entirely yours."
 };
 ```
+
+You can also edit any text directly inside `index.html`.
 
 ---
 
@@ -102,23 +94,17 @@ const DEFAULT_CONFIG = {
    - `README.md`
 3. Go to **Settings** > **Pages**.
 4. Under **Branch**, select `main` (or `master`) and folder `/ (root)`.
-5. Click **Save**. Within 1 minute, GitHub will give you a live link like:
-   `https://yourusername.github.io/birthday-surprise/`
+5. Click **Save**. Within 1 minute, GitHub gives you a live link:
+   `https://<yourusername>.github.io/birthday-surprise/`
 
 ### 2. Netlify (Drag & Drop in 30 Seconds)
 1. Go to [Netlify Drop](https://app.netlify.com/drop).
 2. Drag and drop the folder containing `index.html`, `style.css`, and `script.js`.
 3. Netlify will instantly provide a live HTTPS URL you can text to her!
 
+### 3. Open Directly on Your Computer or Phone
+- Simply double-click `index.html` to open it in Chrome, Safari, Edge, or Firefox. No internet server required!
+
 ---
-
-## 📁 File Structure
-
-```text
-├── index.html       # Clean semantic HTML5 layout & structure
-├── style.css        # Luxury romantic styling, glassmorphism & CSS animations
-├── script.js        # Particles, audio synth, cake & envelope interactions, photo gallery
-└── README.md        # Customization & free hosting instructions
-```
 
 Made with pure ❤️ for the love of your life!
